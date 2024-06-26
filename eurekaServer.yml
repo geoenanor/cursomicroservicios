@@ -1,0 +1,10 @@
+pring:
+  application:
+    name:eurekaServer
+eureka:
+  client:
+    register-with-eureka:false
+    fetch-registry:false
+
+server:
+  port: ${PORT:${SERVER_PORT:8761}}
