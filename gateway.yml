@@ -15,7 +15,7 @@ spring:
           uri: lb://api-course
           #uri: http://localhost:8082 #URL donde se hará el redirect según el predicado definido
           predicates: #Reglas de análisis del request
-            - Path=/api/v1/courses #path de URL de request a considerar
+            - Path=/api/v1/courses/** #path de URL de request a considerar
         - id: api-student #identificador de la ruta
           uri: lb://api-student
           predicates:
