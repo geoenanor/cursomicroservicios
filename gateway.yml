@@ -30,4 +30,12 @@ eureka:
     serviceUrl:
       defaultZone: 
 
-
+management:
+  endpoints:
+    gateway:
+      enablesd: true
+        
+  endpoint:
+    web:
+      expose:
+        include: gateway
